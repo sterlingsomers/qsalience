@@ -90,7 +90,7 @@ def compute_S(blend_trace, keys_list):
         for j in range(len(probs)):
             if FKs[i][1] > vjks[j][i][1]:
                 dSim = -1/max(min_max[vjks[j][i][0].lower()])
-            elif FKs[i][1] == vjks[j][i]:
+            elif FKs[i][1] == vjks[j][i][1]:
                 dSim = 0
             else:
                 dSim = 1/max(min_max[vjks[j][i][0].lower()])

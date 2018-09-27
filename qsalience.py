@@ -190,7 +190,7 @@ def handle_observation(observation):
     return return_dict
 
 
-reset_actr()
+reset_actr('version1.chunks')
 start = time.time()
 handle_observation(['isa','observation',
                     'highest_obstacle_altitude',['highest_obstacle_altitude',1],

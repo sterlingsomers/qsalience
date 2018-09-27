@@ -127,12 +127,12 @@ def compute_S(blend_trace, keys_list):
         rturn.append(results)
     return rturn
 
-def reset_actr():
+def reset_actr(chunk_file_name):
 
     model_name = 'qsalience.lisp'
     model_path = '/Users/paulsomers/COGLE/qsalience/'
 
-    chunk_file_name = 'version1.chunks'
+    #chunk_file_name = 'version1.chunks'
     chunk_path = os.path.join(model_path,'data')
 
     actr.add_command('similarity_function',similarity)
